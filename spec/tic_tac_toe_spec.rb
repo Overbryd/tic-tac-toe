@@ -1,10 +1,6 @@
-require 'rspec'
-require_relative "../lib/tic_tac_toe.rb"
-
-RSpec.configure { |c| c.color = true }
+require 'spec_helper'
 
 describe TicTacToe do
-
   describe "::parse" do
     let(:input) { "X--OXO-OX" }
     let(:subject) { TicTacToe.parse(input) }
